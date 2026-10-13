@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iceburg Coffee Point | Artisanal Café & Falooda Lounge · Manathavady, Wayanad</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Welcome to Iceburg Coffee Point in Manathavady, Wayanad. Artisanal coffee roasts, royal layered faloodas, crispy golden broast, loaded fries, and handcrafted food in a luxury hill-station ambience.">
+  <meta name="keywords" content="Iceburg Coffee Point, Manathavady cafe, Wayanad coffee shop, best falooda in Wayanad, luxury cafe Kerala, broast chicken Manathavady, Wayanad hangout spots">
+  <meta name="author" content="Iceburg Coffee Point">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Iceburg Coffee Point · Manathavady, Wayanad">
+  <meta property="og:description" content="Where coffee meets unhurried moments. Experience artisanal brews and iconic desserts in the heart of Wayanad.">
+  <meta property="og:image" content="image/logo.jpg">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="image/logo.jpg">
+  
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Italiana -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD Structured Data for Local Business / Restaurant in Kerala -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Iceburg Coffee Point",
+    "image": "image/logo.jpg",
+    "@id": "https://maps.app.goo.gl/BUhWQqKHxARct3vw5",
+    "url": "https://maps.app.goo.gl/BUhWQqKHxARct3vw5",
+    "telephone": "+919496012345",
+    "priceRange": "₹₹",
+    "servesCuisine": ["Coffee", "Desserts", "Faloodas", "Burgers", "Fast Food", "Continental"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main Road",
+      "addressLocality": "Manathavady",
+      "addressRegion": "Kerala",
+      "postalCode": "670731",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.8028,
+      "longitude": 76.0034
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "23:30"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-container">
+      <div class="header-inner">
+        
+        <!-- Crisp Clean Logo -->
+        <a href="#hero" class="brand-logo-wrap" title="Iceburg Coffee Point Home">
+          <img src="image/logo.jpg" alt="Iceburg Coffee Point Logo" class="brand-logo-img">
+          <div class="brand-text-block">
+            <span class="brand-name-title">Iceburg</span>
+            <span class="brand-location-sub">Manathavady · Wayanad</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="#hero" class="nav-link active">Home</a>
+          <a href="#story" class="nav-link">Story</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#signatures" class="nav-link">Signatures</a>
+          <a href="#gallery" class="nav-link">Ambience</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#location" class="nav-link">Visit Us</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="btn-media-studio trigger-media-studio" title="Open Media Studio / Customize Photos" aria-label="Customize Photos">
+            <i data-lucide="sliders" style="width: 18px; height: 18px;"></i>
+          </button>
+          
+          <button class="btn-nav-reserve" onclick="openReservationModalWithNote('Table inquiry via header')">
+            <i data-lucide="calendar" style="width: 15px; height: 15px;"></i>
+            <span>Reserve Table</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation Drawer">
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-item">01. Home</a>
+      <a href="#story" class="mobile-nav-item">02. Our Story</a>
+      <a href="#menu" class="mobile-nav-item">03. Editorial Menu</a>
+      <a href="#signatures" class="mobile-nav-item">04. Signatures</a>
+      <a href="#gallery" class="mobile-nav-item">05. Ambience</a>
+      <a href="#experience" class="mobile-nav-item">06. The Experience</a>
+      <a href="#reviews" class="mobile-nav-item">07. Guest Stories</a>
+      <a href="#location" class="mobile-nav-item">08. Location & Directions</a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-contact-pill">
+        <span style="font-weight: 700; color: var(--color-brand); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.1em;">Location</span>
+        <span>Manathavady, Wayanad, Kerala 670731</span>
+        <span>Open Daily: 10:00 AM – 11:30 PM</span>
+      </div>
+      <button class="btn-primary" style="width: 100%;" onclick="openReservationModalWithNote('Mobile drawer booking')">
+        Book a Table or Pre-Order
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION (Cinematic Editorial Atmosphere)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-container">
+        <img src="image/hero-cafe.jpg" alt="Misty Hills Cafe View in Wayanad" class="hero-bg-image">
+        <div class="hero-overlay-vignette"></div>
+      </div>
+
+      <div class="site-container">
+        <div class="hero-content">
+          
+          <div class="hero-badge-pill">
+            <span class="hero-badge-dot"></span>
+            <span>MANATHAVADY · WAYANAD 670731</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Where Coffee Meets <br>
+            <span class="italic-serif">Unhurried Moments.</span>
+          </h1>
+
+          <p class="hero-description">
+            Surrounded by the fresh mountain air of Wayanad, Iceburg is a contemporary sanctuary dedicated to slow-dripped artisanal roasts, legendary faloodas, and gourmet comfort plates.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn-primary">
+              <span>Discover The Menu</span>
+              <i data-lucide="arrow-down" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="#location" class="btn-secondary">
+              <span>Plan Your Visit</span>
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+          <!-- Hero Ticker Stats -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Highland Arabica</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24+</span>
+              <span class="stat-label">Artisan Faloodas & Shakes</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4.8★</span>
+              <span class="stat-label">Wayanad Community Loved</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#story" class="hero-scroll-prompt" aria-label="Scroll to our story">
+        <div class="scroll-indicator-mouse">
+          <div class="scroll-indicator-wheel"></div>
+        </div>
+        <span>Scroll to Explore</span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         2. BRAND STORY / INTRODUCTION (Editorial Asymmetric Layout)
+         ========================================================================== -->
+    <section class="section-story" id="story">
+      <div class="site-container">
+        <div class="story-grid">
+          
+          <!-- Editorial Text Column -->
+          <div class="story-text-col">
+            <span class="story-kicker">The Iceburg Philosophy</span>
+            <h2 class="story-heading">More than coffee. A place to slow down.</h2>
+            
+            <p class="story-paragraph">
+              Born amidst the verdant tea slopes and mist-kissed hills of Manathavady, Iceburg was conceived not merely as a coffee house, but as an unhurried pause from the everyday.
+            </p>
+            <p class="story-paragraph">
+              Here, every cup is measured with intention. Our baristas balance the brightness of locally sourced beans with rich, velvety milks, while our dessert chefs assemble towering faloodas that turn nostalgic Kerala indulgences into modern works of edible art.
+            </p>
+
+            <div class="story-quote-card">
+              “We believe hospitality is the art of giving people time back. In Wayanad's cool evenings, nothing compares to honest coffee, crisp food, and heartfelt laughter.”
+            </div>
+
+            <div class="story-stats-grid">
+              <div>
+                <div class="story-stat-val">Fresh Daily</div>
+                <div class="story-stat-lbl">Locally Prepared</div>
+              </div>
+              <div>
+                <div class="story-stat-val">Wayanad Roots</div>
+                <div class="story-stat-lbl">Community Sanctuary</div>
+              </div>
+              <div>
+                <div class="story-stat-val">Late Hours</div>
+                <div class="story-stat-lbl">Open until 11:30 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layered Asymmetric Photography -->
+          <div class="story-imagery-wrapper">
+            <div class="story-floating-badge">
+              <span>CRAFTED IN WAYANAD</span>
+            </div>
+            
+            <!-- Main Photo (Cold Coffee / Marble Pedestal) -->
+            <div class="story-img-main" onclick="openLightboxFromSource('image/IMG_9466.PNG', 'Cold Coffee Mocha Ritual', 'Served on green marble with chocolate drizzle')">
+              <img src="image/IMG_9466.PNG" alt="Iceburg Artisanal Cold Coffee on Marble" loading="lazy">
+            </div>
+
+            <!-- Overlapping Accent Photo (Barista Pour) -->
+            <div class="story-img-float" onclick="openLightboxFromSource('image/experience-barista.jpg', 'Artisanal Latte Art', 'Specialty microfoam craft in Manathavady')">
+              <img src="image/experience-barista.jpg" alt="Barista Crafting Latte Art at Iceburg" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. FOOD & DRINK SHOWCASE (Filterable & Dynamic Menu)
+         ========================================================================== -->
+    <section class="section-showcase" id="menu">
+      <div class="site-container">
+        
+        <div class="section-header-block">
+          <span class="section-kicker">Curated Culinary Menu</span>
+          <h2 class="section-title">The Culinary Collection</h2>
+          <p class="section-subtitle">
+            From ceremonial layered faloodas to piping hot broast chicken and artisan beverages, explore our kitchen creations crafted with premium ingredients.
+          </p>
+        </div>
+
+        <!-- Filter Categories -->
+        <nav class="menu-filter-nav" aria-label="Menu categories">
+          <button class="filter-btn active" data-filter="all">Full Collection</button>
+          <button class="filter-btn" data-filter="coffee-shakes">Coffee & Shakes</button>
+          <button class="filter-btn" data-filter="faloodas">Signature Faloodas</button>
+          <button class="filter-btn" data-filter="mains">Gourmet Mains</button>
+          <button class="filter-btn" data-filter="broast-crisp">Crispy Broast & Fries</button>
+          <button class="filter-btn" data-filter="specials">House Specials</button>
+        </nav>
+
+        <!-- Menu Cards Grid (Rendered dynamically from config.js) -->
+        <div class="menu-grid" id="menuGridContainer">
+          <!-- Injected via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SIGNATURE DISHES (Staggered Editorial Showcase)
+         ========================================================================== -->
+    <section class="section-signatures" id="signatures">
+      <div class="site-container">
+        
+        <div class="section-header-block">
+          <span class="section-kicker">Chef's Selection</span>
+          <h2 class="section-title">The Signatures of Iceburg</h2>
+          <p class="section-subtitle">
+            Four master recipes that define our identity. Each crafted with relentless devotion to flavor balance, temperature, and visual elegance.
+          </p>
+        </div>
+
+        <!-- Staggered Editorial Rows (Rendered from config.js) -->
+        <div class="signature-items-stack" id="signaturesContainer">
+          <!-- Injected via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CAFÉ AMBIENCE / MASONRY GALLERY
+         ========================================================================== -->
+    <section class="section-gallery" id="gallery">
+      <div class="site-container">
+        
+        <div class="section-header-block">
+          <span class="section-kicker">Atmosphere & Architecture</span>
+          <h2 class="section-title">Moments at Iceburg</h2>
+          <p class="section-subtitle">
+            Sunlit mornings, intimate evening gatherings, and the sights and textures of our Manathavady café.
+          </p>
+        </div>
+
+        <!-- Masonry Grid (Rendered from config.js) -->
+        <div class="gallery-grid" id="galleryGridContainer">
+          <!-- Injected via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. THE EXPERIENCE (Full-Bleed Cinematic Section)
+         ========================================================================== -->
+    <section class="section-experience" id="experience">
+      <div class="experience-bg-wrap">
+        <img src="image/hero-cafe.jpg" alt="Sensory Experience at Iceburg" loading="lazy">
+        <div class="experience-vignette"></div>
+      </div>
+
+      <div class="site-container">
+        <div class="experience-content">
+          <span class="experience-tag">A SENSORY EXPERIENCE</span>
+          <h2 class="experience-quote">
+            Come for the coffee. <br>
+            <span style="font-family: var(--font-accent); font-style: italic; color: #a5eac0;">Stay for the moment.</span>
+          </h2>
+          <p class="experience-subtext">
+            When the cool Wayanad mist sweeps across Manathavady, Iceburg is where warmth lives. A sanctuary of aroma, jazz rhythms, and heartfelt conversation that makes time stand still.
+          </p>
+          <a href="#location" class="btn-primary">
+            <span>Experience It In Person</span>
+            <i data-lucide="compass" style="width: 16px; height: 16px;"></i>
+          </a>
+
+          <!-- Experience 4 Pillars -->
+          <div class="experience-pillars-grid">
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <i data-lucide="cloud-fog" style="width: 24px; height: 24px;"></i>
+              </div>
+              <h3 class="pillar-title">Highland Air</h3>
+              <p class="pillar-desc">Cool, refreshing hill climate that makes hot sips even more comforting.</p>
+            </div>
+            
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <i data-lucide="coffee" style="width: 24px; height: 24px;"></i>
+              </div>
+              <h3 class="pillar-title">Artisan Extraction</h3>
+              <p class="pillar-desc">Custom dial-in roast profiles extracting notes of cocoa, nuts, and spice.</p>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <i data-lucide="users" style="width: 24px; height: 24px;"></i>
+              </div>
+              <h3 class="pillar-title">Unhurried Tempo</h3>
+              <p class="pillar-desc">Thoughtfully spaced seating designed for intimate talks and laughter.</p>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <i data-lucide="moon" style="width: 24px; height: 24px;"></i>
+              </div>
+              <h3 class="pillar-title">Evening Glow</h3>
+              <p class="pillar-desc">Atmospheric lighting and chilled desserts till 11:30 PM every night.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. SOCIAL PROOF / GUEST REVIEWS
+         ========================================================================== -->
+    <section class="section-reviews" id="reviews">
+      <div class="site-container">
+        
+        <div class="section-header-block">
+          <span class="section-kicker">Wayanad Community Love</span>
+          <h2 class="section-title">Words from Our Guests</h2>
+          <p class="section-subtitle">
+            What travelers, locals, and coffee lovers say about their visits to Iceburg Coffee Point.
+          </p>
+        </div>
+
+        <div class="reviews-grid" id="reviewsContainer">
+          <!-- Injected via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. INSTAGRAM / SOCIAL MEDIA SECTION
+         ========================================================================== -->
+    <section class="section-instagram">
+      <div class="site-container">
+        
+        <div class="instagram-header">
+          <div>
+            <span class="section-kicker">@iceburg_coffeepoint</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Follow Our Everyday Moments</h2>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="background-color: var(--color-brand); color: #fff; border-color: var(--color-brand);">
+            <i data-lucide="instagram" style="width: 16px; height: 16px;"></i>
+            <span>Follow on Instagram</span>
+          </a>
+        </div>
+
+        <div class="instagram-grid" id="instagramGridContainer">
+          <!-- Injected via script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. LOCATION & VISIT US (Manathavady, Wayanad)
+         ========================================================================== -->
+    <section class="section-location" id="location">
+      <div class="site-container">
+        
+        <div class="section-header-block">
+          <span class="section-kicker">Find Our Sanctuary</span>
+          <h2 class="section-title">Visit Iceburg Coffee Point</h2>
+          <p class="section-subtitle">
+            Located conveniently on Main Road in Manathavady, Wayanad. Stop by for your morning brew or an unforgettable late-night dessert.
+          </p>
+        </div>
+
+        <div class="location-split-layout">
+          
+          <!-- Information Card -->
+          <div class="location-info-card">
+            <div>
+              <div class="hero-badge-pill" style="margin-bottom: 20px; background-color: var(--color-brand-subtle); border-color: rgba(28, 87, 55, 0.15); color: var(--color-brand);">
+                <span class="live-status-pill">
+                  <span class="hero-badge-dot"></span> Open Now · Serving until 11:30 PM
+                </span>
+              </div>
+
+              <h3 style="font-family: var(--font-serif); font-size: 1.8rem; color: var(--color-brand-dark); margin-bottom: 12px;">
+                Manathavady, Wayanad
+              </h3>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+                Kerala, India · PIN 670731
+              </p>
+
+              <div class="location-detail-list">
+                
+                <div class="location-item">
+                  <div class="location-icon-bubble">
+                    <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <div>
+                    <div class="location-item-title">Exact Address</div>
+                    <div class="location-item-val">Iceburg Coffee Point, Main Road, Manathavady, Wayanad, Kerala 670731</div>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <div class="location-icon-bubble">
+                    <i data-lucide="clock" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <div>
+                    <div class="location-item-title">Operating Hours</div>
+                    <div class="location-item-val">Monday – Sunday: 10:00 AM to 11:30 PM</div>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <div class="location-icon-bubble">
+                    <i data-lucide="phone-call" style="width: 20px; height: 20px;"></i>
+                  </div>
+                  <div>
+                    <div class="location-item-title">Phone & WhatsApp</div>
+                    <div class="location-item-val">+91 94960 12345</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="location-actions-group">
+              <a href="https://maps.app.goo.gl/BUhWQqKHxARct3vw5" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                <i data-lucide="navigation" style="width: 16px; height: 16px;"></i>
+                <span>Get Directions</span>
+              </a>
+              <a href="tel:+919496012345" class="btn-secondary" style="color: var(--color-brand); border-color: var(--color-brand);">
+                <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+                <span>Call Us</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Interactive Google Maps Frame Card -->
+          <div class="map-embed-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.946328639535!2d76.001221!3d11.802804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5d58ff62ad8e1%3A0x6b4ef84c01bbf501!2sMananthavady%2C%20Kerala%20670731!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map Location of Iceburg Coffee Point Manathavady">
+            </iframe>
+            
+            <div class="map-floating-overlay">
+              <div>
+                <div class="map-badge-text">Iceburg Coffee Point</div>
+                <div style="font-size: 0.74rem; color: var(--color-text-muted);">Manathavady, Wayanad 670731</div>
+              </div>
+              <a href="https://maps.app.goo.gl/BUhWQqKHxARct3vw5" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 8px 16px; font-size: 0.74rem;">
+                Open in Maps
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       10. FOOTER (Deep Green #1C5737 Editorial Theme)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Brand Column with Crisp Logo -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="image/logo.jpg" alt="Iceburg Coffee Point" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-name">Iceburg</div>
+              <div class="footer-brand-sub">COFFEE POINT · MANATHAVADY</div>
+            </div>
+          </div>
+          <p class="footer-bio-text">
+            Crafting memorable hillside moments through artisanal coffee, legendary layered faloodas, and contemporary comfort food in Wayanad, Kerala.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 6px;">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-media-studio" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://maps.app.goo.gl/BUhWQqKHxARct3vw5" target="_blank" rel="noopener noreferrer" class="btn-media-studio" aria-label="Google Maps">
+              <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i>
+            </a>
+            <a href="https://wa.me/919496012345" target="_blank" rel="noopener noreferrer" class="btn-media-studio" aria-label="WhatsApp">
+              <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link-item">Home</a></li>
+            <li><a href="#story" class="footer-link-item">Our Story</a></li>
+            <li><a href="#menu" class="footer-link-item">Editorial Menu</a></li>
+            <li><a href="#signatures" class="footer-link-item">Signature Dishes</a></li>
+            <li><a href="#gallery" class="footer-link-item">Ambience & Space</a></li>
+            <li><a href="#experience" class="footer-link-item">The Experience</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating Hours -->
+        <div>
+          <h4 class="footer-col-title">Opening Hours</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><strong>Monday – Friday:</strong><br>10:00 AM – 11:00 PM</li>
+            <li class="footer-link-item" style="margin-top: 10px;"><strong>Saturday – Sunday:</strong><br>10:00 AM – 11:30 PM</li>
+            <li class="footer-link-item" style="margin-top: 10px; color: #78df9e;">● Kitchen Open Late</li>
+          </ul>
+        </div>
+
+        <!-- Location & Contact -->
+        <div>
+          <h4 class="footer-col-title">Location & Contact</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin" style="width: 18px; height: 18px; color: #78df9e; flex-shrink: 0; margin-top: 3px;"></i>
+            <span>Main Road, Manathavady, Wayanad, Kerala 670731</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone" style="width: 18px; height: 18px; color: #78df9e; flex-shrink: 0; margin-top: 3px;"></i>
+            <span>+91 94960 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="mail" style="width: 18px; height: 18px; color: #78df9e; flex-shrink: 0; margin-top: 3px;"></i>
+            <span>iceburgcafe.wayanad@gmail.com</span>
+          </div>
+          <button class="btn-primary" style="margin-top: 14px; width: 100%; font-size: 0.82rem; padding: 12px 20px;" onclick="openReservationModalWithNote('Footer reservation request')">
+            Book Table on WhatsApp
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Iceburg Coffee Point. All Rights Reserved. Crafted for Wayanad hospitality.
+        </div>
+        <a href="#hero" class="back-to-top-btn">
+          <span>Back to Top</span>
+          <i data-lucide="arrow-up" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       11. FULLSCREEN LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox">
+    <button class="lightbox-close-btn" aria-label="Close Lightbox" onclick="closeLightbox()">
+      <i data-lucide="x" style="width: 24px; height: 24px;"></i>
+    </button>
+    <button class="lightbox-arrow-btn prev" aria-label="Previous Image">
+      <i data-lucide="chevron-left" style="width: 28px; height: 28px;"></i>
+    </button>
+    <button class="lightbox-arrow-btn next" aria-label="Next Image">
+      <i data-lucide="chevron-right" style="width: 28px; height: 28px;"></i>
+    </button>
+
+    <div class="lightbox-content-box">
+      <img src="" alt="" class="lightbox-img-element">
+      <div class="lightbox-caption-bar">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-subtitle"></p>
+        <div class="lightbox-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       12. RESERVATION & WHATSAPP MODAL
+       ========================================================================== -->
+  <div class="reservation-modal" id="reservationModal" role="dialog" aria-modal="true" aria-label="Reserve Table">
+    <div class="reservation-card">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
+        <div>
+          <span class="section-kicker">Manathavady Sanctuary</span>
+          <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--color-brand);">Reserve Your Table</h3>
+        </div>
+        <button id="resCloseBtn" style="color: var(--color-text-muted); cursor: pointer;" aria-label="Close Modal">
+          <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+        </button>
+      </div>
+
+      <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 20px;">
+        Join us at Iceburg Coffee Point in Wayanad. We will prepare your table or pre-order your favorite faloodas & dishes.
+      </p>
+
+      <form id="reservationForm">
+        <div class="res-form-grid">
+          <div>
+            <label class="res-input-label" for="resName">Full Name</label>
+            <input type="text" id="resName" class="res-input-field" placeholder="e.g. Rahul Nair" required>
+          </div>
+          <div>
+            <label class="res-input-label" for="resPhone">Phone Number</label>
+            <input type="tel" id="resPhone" class="res-input-field" placeholder="e.g. 98470 12345" required>
+          </div>
+          <div>
+            <label class="res-input-label" for="resDate">Preferred Date</label>
+            <input type="date" id="resDate" class="res-input-field" required>
+          </div>
+          <div>
+            <label class="res-input-label" for="resTime">Preferred Time</label>
+            <input type="time" id="resTime" class="res-input-field" value="18:30" required>
+          </div>
+          <div>
+            <label class="res-input-label" for="resGuests">Number of Guests</label>
+            <select id="resGuests" class="res-input-field">
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guests" selected>2 Guests</option>
+              <option value="3-4 Guests">3 – 4 Guests</option>
+              <option value="5-8 Guests">5 – 8 Guests (Group)</option>
+              <option value="9+ Guests">9+ Guests (Party)</option>
+            </select>
+          </div>
+          <div>
+            <label class="res-input-label" for="resSeating">Preferred Seating</label>
+            <select id="resSeating" class="res-input-field">
+              <option value="Cozy Corner">Cozy Corner</option>
+              <option value="Window / View">Window View</option>
+              <option value="Group Sofa">Group Sofa Lounge</option>
+              <option value="Outdoor Terrace">Terrace Seating</option>
+            </select>
+          </div>
+          <div class="res-form-full">
+            <label class="res-input-label" for="resNotes">Special Requests / Dish Pre-Order</label>
+            <input type="text" id="resNotes" class="res-input-field" placeholder="e.g. Twin Royal Faloodas & Broast Combo ready on arrival">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Confirm & Send via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       13. LIVE MEDIA STUDIO DRAWER (Custom Photo Replacer & Previewer)
+       ========================================================================== -->
+  <div class="media-studio-drawer" id="mediaStudioDrawer" role="dialog" aria-modal="true" aria-label="Media Studio">
+    <div class="media-studio-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i data-lucide="camera" style="width: 20px; height: 20px;"></i>
+        <div class="media-studio-title">Media Customizer</div>
+      </div>
+      <button id="closeMediaStudio" style="color: #fff; cursor: pointer;" aria-label="Close Media Studio">
+        <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+      </button>
+    </div>
+
+    <div class="media-studio-body">
+      <div class="media-tip-box">
+        <strong>Effortless Photo Replacement:</strong><br>
+        1. Select any dish or section below.<br>
+        2. Upload your own photo to see it live immediately.<br>
+        3. Click "Download Updated config.js" to save your changes forever!
+      </div>
+
+      <div id="studioTargetItemName" style="font-weight: 700; color: var(--color-brand); margin-bottom: 8px; font-size: 0.88rem;">
+        Target: Hero Background
+      </div>
+
+      <div class="studio-upload-zone" onclick="document.getElementById('studioFileInput').click()">
+        <i data-lucide="upload-cloud" style="width: 32px; height: 32px; color: var(--color-brand); margin: 0 auto;"></i>
+        <div class="studio-upload-title">Choose Photo from Device</div>
+        <p style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 4px;">Supports PNG, JPG, WEBP</p>
+        <input type="file" id="studioFileInput" accept="image/*" style="display: none;">
+      </div>
+
+      <h4 style="font-size: 0.84rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: 12px;">
+        Current Menu Photos
+      </h4>
+      <div class="studio-items-list" id="studioItemsContainer">
+        <!-- Injected via script.js -->
+      </div>
+
+      <button id="exportConfigBtn" class="btn-primary" style="width: 100%; margin-top: 24px;">
+        <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+        <span>Download Updated config.js</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- CDN Script Dependencies -->
+  <!-- 1. GSAP + ScrollTrigger for high-end cinematic animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+  <!-- 2. Lenis Smooth Scrolling for Apple-level scroll physics -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- 3. Centralized Media & Content Manifest -->
+  <script src="config.js"></script>
+
+  <!-- 4. Interactive Engine & UI Controller -->
+  <script src="script.js"></script>
+
+  <script>
+    // Initialize Lucide icons on load
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
